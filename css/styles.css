@@ -2,15 +2,18 @@ body {
     font-family: 'Quicksand';
 }
 
-header h1 {
-    font-family: 'Anton';
-}
-
 .jumbotron {
     margin: 0;
     padding: 30px;
     background-image: linear-gradient(to right, #037171, #00B9AE, #037171);
     color: white;
+}
+
+h1 {
+    font-family: 'Anton';
+}
+h3 {
+    font-family: 'Anton';
 }
 
 .row-content {

@@ -21,20 +21,6 @@
 
 <body>
 
-    <header class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <i class="fa fa-heartbeat fa-5x" aria-hidden="true"></i>
-                </div>
-                <div class="col">
-                    <h1>Daily Dose</h1>
-                    <h2>meds made easy...</h2>
-                </div>
-            </div>
-        </div>
-    </header>
-
     <!-- Main Navigation Bar -->
     <nav class="navbar navbar-expand-sm  sticky-top">
         <div class="container">
@@ -45,10 +31,9 @@
             </button>
             <div class="collapse navbar-collapse" id="nucampNavbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="#"><i class=" fa fa-home fa-lg"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-info-circle fa-lg"></i> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-cloud-download fa-lg"></i> Downloads</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-envelope fa-lg"></i> Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><i class="fa fa-info-circle fa-lg"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-cloud-download fa-lg"></i> Download</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa fa-envelope fa-lg"></i> Contact</a></li>
                 </ul> 
                 <span class="navbar-text ml-auto colorfixaqua">
                     <a role="button" data-toggle="modal" data-target="#loginModal">
@@ -58,6 +43,7 @@
             </div>
         </div>
     </nav>
+
 
     <!-- Login Modal -->
     <div id="loginModal" class="modal fade" role="dialog">
@@ -97,23 +83,127 @@
         </div>
     </div>
 
+    <div class="container-fluid">
+        <div class="row">
+            <img src="img/succulent.png" class="img-fluid float-right" alt="">
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <i class="fa fa-heartbeat fa-5x" aria-hidden="true"></i>
+                </div>
+                <div class="col">
+                    <h1>Daily Dose</h1>
+                    <h2>meds made easy...</h2>
+                </div>
+                <div class="col-sm-12 col-md-4 col-xl-2 mt-4 text-center">
+                    <a class="btn btn-info btn-lg text-nowrap" data-toggle="modal" data-target="#reserveModal">See a Demo!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Main Content Container -->
     <div id="mainContent" class="container">
 
-        <div class="row row-content">
-            <div class="col">
-                <h3>More Info</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc scelerisque viverra mauris in. Tristique risus nec feugiat in fermentum posuere. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Dignissim diam quis enim lobortis scelerisque. Vulputate sapien nec sagittis aliquam malesuada. Quis lectus nulla at volutpat diam ut venenatis. Enim nunc faucibus a pellentesque sit amet porttitor eget. Sed felis eget velit aliquet. Bibendum est ultricies integer quis auctor elit sed. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Consequat semper viverra nam libero justo laoreet. Sit amet justo donec enim. Duis ut diam quam nulla porttitor. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. Nec ultrices dui sapien eget mi proin sed. Metus aliquam eleifend mi in nulla posuere sollicitudin. Amet est placerat in egestas erat.
-                </p>
+        <span id="about"></span>
+        <br>
+        <section>
+            <div class="row row-content text-center">
+                <div class="col">
+                    <p>It’s already tough trying to keep up with everything on your to-do list. We get it!</p>
+                    <p>And it’s no fun when the Doc add's another thing to your list... or two, or three!</p>
+                    <p>We built this app to help other people like us - who have trouble keeping up with all the little things in life, such as remembering to take daily medications.</p>
+                    <p>Life shouldn't be so hard all the time... so make things simple with</p>
+                    <h1 style="color: #FF9F1C;">Daily Dose</h1>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <span id="contact"></span>
+        <br>
+        <section>
+            <div class="row row-content ">
+                <div class="col text-center">
+                    <h3 style="color: #00B9AE;">Connect With Us!</h3>
+                    <p>
+                        Questions, comments, concerns? We're here to help!
+                    </p>
+                </div>
+                <div class="col-12">
+                </div>
+                <br>
+                <div class="col-6">
+                    <form>
+                        <div class="form-group row">
+                            <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lastName" class="col-md-2 col-form-label">Last Name</label> 
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                            <div class="col-5 col-md-3">
+                                <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                            </div>
+                            <div class="col-7">
+                                <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-md-2 col-form-label">Email</label> 
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col offset-md-2">
+                                May we contact you?
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-checkinput" id="contactYes" name="contactRadios" value="yes" />
+                                    <label for="contactYes" class="form-check-label">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                                    <label for="contactNo" class="form-check-label">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                            <div class="col-md-10">
+                                <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="submit" class="btn btn-primary">Send Feedback</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+        </section>
+
     </div>
 
     <!-- Site Footer -->
     <footer class="site-footer">
         <div class="container">
             <div class="row">
+                <div class="col-12 text-center">
+                    <img src="img/lovebeat.png" width="300px" alt="">
+                </div>
                 <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
