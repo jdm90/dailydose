@@ -1,0 +1,205 @@
+$color-sea-green: #00B9AE;
+$color-orange-peel: #FF9F1C;
+$color-goog-green: #0F9D58;
+$color-grey-transparent: rgba(209, 209, 209, 0.2);
+$color-white: #FFFFFF;
+$color-black: #000000;
+
+$body-font: "Quicksand";
+$header-font: "Anton";
+
+
+body {
+    font-family: $body-font;
+}
+
+h1 {
+    font-family: $header-font;
+    color: $color-orange-peel;
+}
+
+h3 {
+    font-family: $header-font;
+    color: $color-orange-peel;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+nav {
+    color: $color-white;
+}
+
+.navbar {
+    background-color: $color-orange-peel;
+
+    a, i {
+        color: $color-white;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: $color-black;
+    }
+}
+
+.navcolorfix:hover {
+    color: $color-black;
+}
+
+/* Place text in the middle of the image */
+.banner-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-goog-green;
+
+    h1 {
+        color: $color-goog-green;
+    }
+}
+
+.blue-icons {
+    color: $color-sea-green;
+}
+
+.btn-orange {
+    background-color: $color-orange-peel;
+    color: $color-white;
+}
+
+.btn-orange:hover {
+    transform: scale(1.05);
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.card:hover {
+    transform: scale(1.01);
+  }
+
+.card-title {
+    font-weight: bold;
+    color: $color-sea-green;
+}
+
+.bg-light-grey {
+    background-color: $color-grey-transparent;
+}
+
+.site-footer {
+    background-image: linear-gradient($color-sea-green, $color-white);
+    padding: 20px 0;
+    width: 100%;
+}
+
+footer {
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $color-orange-peel;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+
+    h5 {font-weight: bold;}
+}
+
+/* Styling for Testemonial Carousel */
+.wrapper {
+    background-color: $color-sea-green;
+    width: 800px;
+    margin: 50px auto;
+    padding: 110px 120px
+
+    
+}
+
+.wrapper .content {
+    padding: 10px;
+    cursor: pointer
+}
+
+.testimonial {
+    padding: 20px 40px;
+    position: relative
+}
+
+.fa-quote-left {
+    position: absolute;
+    top: -15px;
+    left: -6px;
+    font-size: 2rem;
+    color: $color-orange-peel;
+}
+
+.fa-quote-right {
+    position: absolute;
+    bottom: -15px;
+    right: -6px;
+    font-size: 2rem;
+    color: $color-orange-peel;
+}
+
+.employee {
+    margin-bottom: 40px;
+    padding-left: 30px
+}
+
+.h3 {
+    margin: 0
+}
+
+.carousel-indicators {
+    bottom: -100px
+
+    li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%
+    }
+}
+
+.text-jusitfy {
+    font-weight: 700
+}
+
+@media(max-width:767px) {
+    .wrapper {
+        padding: 80px 50px;
+        margin: 50px 10px
+    }
+
+    .carousel-indicators {
+        bottom: -80px
+    }
+}
+
+@media(max-width: 420px) {
+    .wrapper {
+        padding: 40px 20px
+    }
+
+    .carousel-indicators {
+        bottom: -45px
+    }
+
+    .employee {
+        margin-bottom: 40px;
+        padding-left: 15px
+    }
+}
+/* End styling for Testemonial Carousel */
