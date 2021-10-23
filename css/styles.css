@@ -42,6 +42,10 @@ nav {
 .blue-icons {
   color: #00B9AE; }
 
+.required {
+  font-weight: bold;
+  color: #FF9F1C; }
+
 .btn-orange {
   background-color: #FF9F1C;
   color: #FFFFFF; }
@@ -119,10 +123,11 @@ footer h5 {
   margin: 0; }
 
 .carousel-indicators {
-  bottom: -100px li;
-    bottom-width: 10px;
-    bottom-height: 10px;
-    bottom-border-radius: 50%; }
+  bottom: -100px; }
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; }
 
 .text-jusitfy {
   font-weight: 700; }
